@@ -1,38 +1,18 @@
-# create-svelte
+# Svelte-demo
 
-Everything you need to build a Svelte project, powered by [`create-svelte`](https://github.com/sveltejs/kit/tree/master/packages/create-svelte).
-
-## Creating a project
-
-If you're seeing this, you've probably already done this step. Congrats!
-
-```bash
-# create a new project in the current directory
-npm create svelte@latest
-
-# create a new project in my-app
-npm create svelte@latest my-app
-```
-
-## Developing
-
-Once you've created a project and installed dependencies with `npm install` (or `pnpm install` or `yarn`), start a development server:
-
-```bash
-npm run dev
-
-# or start the server and open the app in a new browser tab
-npm run dev -- --open
-```
-
-## Building
-
-To create a production version of your app:
-
-```bash
-npm run build
-```
-
-You can preview the production build with `npm run preview`.
-
-> To deploy your app, you may need to install an [adapter](https://kit.svelte.dev/docs/adapters) for your target environment.
+- demo shows my implementation of svelte-kit, socket.io and forerunnerdb
+- UI framework I used is the flowbite and flowbite-svelte
+- To build you can use npm or yarn
+- yarn dev or npm run dev
+- browser http://localhost:3000
+## Database
+- db file is located ./src/lib/server/dbData/mixers.json
+- You can edit the file but you will need to restart the application.
+## Socket.io
+- This is used for dynamic loading of any database change. 
+- If a new mixer is added, 
+  - the client will add the entry to the database
+  - save the json file out to src/lib/server/dbData/mixers.json
+  - send a socket message called "mixer-update"
+  - client will then query the api/mixers and add value into the client store
+  - therefore the updates will be reflected by the store subscribe ($) in the page.
