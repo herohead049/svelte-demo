@@ -1,7 +1,9 @@
 <script>
+    import "../app.postcss";
+    import "../app.postcss";
     /** @type {import('./$types').LayoutData} */
-    import "../app.css";
-    
+    import "../app.postcss";
+
     import { onMount } from "svelte";
     import  { mixers} from "$lib/stores/cocktail-store"
     import { io } from "$lib/webSocketConnection";
@@ -29,4 +31,4 @@
 });
 
 </script>
-<slot />
+<slot></slot>
