@@ -1,0 +1,17 @@
+[
+  {
+    "name": "Water",
+    "type": "unlimited",
+    "amount": 100
+  },
+  {
+    "name": "Scotch",
+    "type": "bottle",
+    "amount": 1
+  },
+  {
+    "name": "Gin",
+    "type": "bottle",
+    "amount": "3"
+  }
+]
