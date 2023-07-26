@@ -2,7 +2,8 @@
 
 - demo shows my implementation of svelte-kit, socket.io and forerunnerdb
 - UI framework I used is the flowbite and flowbite-svelte
-- To build you can use npm or yarn
+- I use yarn but you can use npm.
+- yarn install or npm install
 - yarn dev or npm run dev
 - browser http://localhost:3000
 ## Database
