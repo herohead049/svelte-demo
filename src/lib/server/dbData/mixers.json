@@ -1,17 +1,12 @@
 [
-  {
-    "name": "Water",
-    "type": "unlimited",
-    "amount": 100
-  },
-  {
-    "name": "Scotch",
-    "type": "bottle",
-    "amount": 1
-  },
-  {
-    "name": "Milk",
-    "type": "small",
-    "amount": "3"
-  }
+	{
+		"name": "Water",
+		"type": "unlimited",
+		"amount": 100
+	},
+	{
+		"name": "Scotch",
+		"type": "bottle",
+		"amount": 1
+	}
 ]
